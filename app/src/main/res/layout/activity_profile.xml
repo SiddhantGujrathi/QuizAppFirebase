@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/profile_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:lottie_rawRes="@raw/apti_animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"
+                    tools:text="gujarthisiddhant@gmail.com"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogout"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+               android:layout_marginTop="5dp"
+                android:background="@drawable/button_background"
+                android:text="Log Out"
+                android:textColor="@color/colorPrimaryButton"
+                android:textSize="10sp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test History"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/testSubmittedRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

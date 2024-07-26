@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RankList"
+    android:layout_marginTop="20dp"
+    android:padding="7dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aptitude Test"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily Rankings"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/company_logo"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dateNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="15 Jul 2024"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/testSubmittedRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

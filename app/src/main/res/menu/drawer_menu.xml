@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="History" android:id="@+id/btnProfile" />
+    <item android:title="Daily Ranks" android:id="@+id/btnRankList" />
+    <item android:title="Help" android:id="@+id/btnHelp" />
+</menu>
